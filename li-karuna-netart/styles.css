@@ -13,6 +13,12 @@ h2 {
     font-size: 15pt;
 }
 
+p,
+pre {
+    font-size: 11pt;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+}
 
 
 ul {
@@ -76,4 +82,29 @@ footer ul {
     width: 300px;
 }
 
-.search-items
+.search-items {
+    opacity: 0;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 15vw 10vw 40vw 20vw 20vw;
+    grid-template-rows: 1fr 1fr;
+}
+
+.label1 {
+    margin: 0;
+    grid-column: 2 / 3;
+}
+
+.label2 {
+    margin: 0;
+    grid-column: 3 / 4;
+}
+
+.item-image {
+    width: 75px;
+    grid-area: ;
+}
+
+
