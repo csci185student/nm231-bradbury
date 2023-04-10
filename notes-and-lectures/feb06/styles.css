@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+}
+
+#container {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: currentColor;
+}
+
+.ascii1 {
+    font-size 40px;
+    font-family: monospace;
+    color: orange;
+}
+
+.collar {
+    color: white;
+}
+
+.harry-potter {
+    color: blue;
+}
+
+.flower {
+    color: pink;
+}
+
+.mountain {
+    font-size: 12pt;
+    
+}

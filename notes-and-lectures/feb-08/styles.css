@@ -1,0 +1,83 @@
+body {
+    background-color: #ccc;
+    text-align: center;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color:#ccc;
+    animation-name: color;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+}
+
+@keyframes color {
+    0% {
+      background-color: #ccc;  
+    }
+    
+    50% {
+        background-color: red;
+    }
+    
+    100% {
+        background-color: #ccc;
+    }
+}
+
+.container2 {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color:red;
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0%;
+    }
+    
+    100% {
+        opacity: 100%;
+    }
+}
+
+.container3 {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color:red;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes move {
+    
+    0% {
+        transform: translateX(0px)
+    }
+    
+    25% {
+        transform: translateX(-50px)
+    }
+    
+    75% {
+        transform: translateX(50px)
+    }
+    
+    100% {
+        transform: translateX(0px)
+    }
+    
+}
+
+
+
+

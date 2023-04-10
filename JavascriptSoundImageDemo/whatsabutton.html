@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Javscript Sound Image</title> 
+    <style>
+    
+        #image-div{
+            width: 1000px;
+            height: 600px;
+            margin: 0 auto;
+            background-color: red; 
+            background-image: url('../Li_Karuna_Sound/img1.png');
+        }
+    
+    </style>
+</head>
+<body onkeypress="changeBG(); funsoundplayer()">
+    <div id="image-div"></div>
+
+    
+<script>
+    
+    function changeBG() {
+        document.getElementById('image-div').style.backgroundImage = "url('../Li_Karuna_Sound/img2.png')";
+        console.log('running');
+    }
+    
+    var anysound = new Audio('../Li_Karuna');
+    
+    function funsoundplayer(){
+        anysound.play();
+    }
+    
+</script>    
+    
+</body>
+</html>
+

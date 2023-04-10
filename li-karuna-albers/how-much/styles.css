@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Drakoni';
+    src:url(../drakoni_sans/DrakoniSans_PERSONAL_USE_ONLY.otf)
+}
+
+body {
+    background-color: rgb(16, 16, 16);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Drakoni';
+}
+
+h1 {
+    color: rgba(255, 255, 255, 0.443);
+}
+
+a {
+    font-size: 20pt;
+    color: rgba(255, 255, 255, 0.443);
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    column-gap: 30rem;
+    margin-top: 3em;
+}
+
+#container {
+    display: flex;
+    width: 40vw;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+div {
+    width: 20vw;
+    height: 20vw;
+    transition: all .5s ease-in;
+}
+
+div:hover {
+    width: 90rem;
+}
+
+.tan {
+    background-color: #B38A58;
+}
+
+.pink {
+    background-color: rgb(255, 0, 166);
+}

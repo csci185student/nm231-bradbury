@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Drakoni';
+    src:url(../drakoni_sans/DrakoniSans_PERSONAL_USE_ONLY.otf)
+}
+
+body {
+    background-color:#1f1f1f;
+    font-family: 'Drakoni';
+}
+
+a {
+    font-size: 20pt;
+    color: rgba(255, 255, 255, 0.443);
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    column-gap: 30rem;
+    margin-top: 3em;
+}
+
+#container{
+    background-color: #1f1f1f;
+    margin: 0 auto;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    transition: all .7s ease-in;
+}
+
+#container:active{
+    width: 27.8vw;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50vw;
+    height: 100vh;
+}
+
+.container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50vw;
+    height: 100vh;
+}
+
+.one {
+    background-color: rgb(22, 43, 43);
+}
+
+.two {
+    background-color: rgb(22, 55, 55);
+}
+
+.three {
+    background-color: rgb(30, 99, 39);
+}
+
+.four {
+    background-color: rgb(30, 115, 50);
+}
+
+.five {
+    background-color: rgb(77, 30, 99);
+}
+
+.six {
+    background-color: rgb(60, 30, 70);
+}
+
+.seven {
+    background-color: rgb(183, 53, 107);
+}
+
+.eight {
+    background-color: rgb(200, 53, 120);
+}

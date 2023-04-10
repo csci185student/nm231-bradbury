@@ -1,0 +1,45 @@
+body {
+    background-color: #4166ca;
+    z-index: 0;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    background-color: #1f0648;
+    margin: 10px 10px;
+/*    display: inline-block;*/
+    float: left;
+    z-index:auto;
+}
+
+#parent {
+    width: 170px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #4166ca;
+    z-index: 1;
+}
+
+.rogue {
+/*    width: 100%;*/
+    margin: 35px;
+/*    opacity: 0.7;*/
+    width: 100px;
+    height: 100px;
+    background-color: #4166ca;
+    position: fixed;
+    z-index: 3;
+    border: double 15px #1f0648;
+}
+
+.under {
+    z-index: 2;
+    position: relative;
+}
+
+.over {
+    z-index: 4;
+    position: relative;
+}
+

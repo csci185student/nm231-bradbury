@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Drakoni;
+    src:url('../drakoni_sans/DrakoniSans_PERSONAL_USE_ONLY.otf');
+}
+
+body {
+    background-color: #eee;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    width: 100vw;
+    text-align: center;
+    font-family: Drakoni;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    width: 100vw;
+    text-align: center;
+    font-family: Drakoni;
+}
+
+#container1 {
+    background-color: #247D9B;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    opacity:100%;
+    animation-name:disappear;
+    animation-delay:3s;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+}
+
+.illusion {
+    margin-right: 15vw;
+    background-color: #F50F02;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot {
+    background-color: white;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+}
+
+#container2 {
+    background-color: black;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    opacity:0%;
+    animation-name:appear;
+    animation-delay:3s;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+}
+    
+.cyan {
+    margin-left: 15vw;
+    background-color: cyan;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}
+
+@keyframes appear{
+    0%{
+        opacity:0%;
+    }
+    99%{
+        opacity:0%;
+    }
+    100%{
+        opacity:100%;
+    }
+}
+
+@keyframes disappear{
+    0%{
+        opacity:100%;
+    }
+    99%{
+        opacity:100%;
+    }
+    100%{
+        opacity:0%;
+    }
+}
+
+

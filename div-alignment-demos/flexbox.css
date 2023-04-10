@@ -1,0 +1,28 @@
+body {
+    background-color: #484332;
+    margin: 0 auto;
+}
+
+#container {
+    background-color: #56534e;
+    display: flex;
+    width: 80%;
+    max-height: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    border: double 5px #d6ceb0;
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+    color: #d6ceb0;
+}
+
+

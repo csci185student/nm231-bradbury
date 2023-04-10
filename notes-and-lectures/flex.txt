@@ -1,0 +1,10 @@
+HTML and CSS Page Layout / Arranging Divs on a page using CSS:
+
+1. CSS Box Model - positioning properties, 
+floats to lay out divs / elements on a page
+
+2. CSS Flexbox = model for arranging elements on a page that is dynamic and relational (parent/child).
+    Parent - "flex-container".
+    Child - "flex-item".
+
+3. CSS Grid - dynamic model for arranging complex elements within a page. Based on column and row layouts - more complexity than flexbox.

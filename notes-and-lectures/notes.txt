@@ -1,0 +1,18 @@
+Brackets - is a piece of software to create txt files. The file extension you save these as determines the type of file it is and how it loads. - Atom, Sublime Text, etc.
+
+Main coding languages for the web: HTML, CSS, Javascript
+
+HTML: "Hypertext Markup Language". The main structure of any webpage. Sets up the page and creates the content. 
+*Skeleton*.
+
+CSS: "Cascading Style Sheets". Pairs with HTML and allows you to design the look and layout of the webpage.
+- style - position, typography, fonts, headers, text size, color, margins/spacing/padding.
+*Skin/Clothing*
+
+Ways to apply CSS:
+    1. inline styles
+    2. internal styles: when the style is just applied to a single html page
+    3. external styles: when the style is applied to all the html pages - the whole site
+
+Javascript: dynamic, data-driven content/functionality - complext. 
+*Brain*
