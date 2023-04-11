@@ -74,37 +74,51 @@ footer ul {
     text-decoration: underline;
 }
 
+.center {
+    width: 100vw;
+    text-align: center;
+    margin: 0;
+
+}
+
 .logo {
     width: 150px;
 }
 
 .search {
-    width: 300px;
+    width: 400px;
+    position: absolute;
+    margin: 20px 0px 0px 200px;
 }
 
 .search-items {
-    opacity: 0;
+    width: 400px;
+    position: absolute;
+    margin: 44px 0px 0px 200px;
 }
 
 .container1 {
     display: grid;
-    grid-template-columns: 15vw 10vw 40vw 20vw 20vw;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 10vw 15vw 40vw 20vw;
+    grid-template-rows: 1fr;
+    margin-bottom: 20px;
 }
 
 .label1 {
     margin: 0;
     grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
 .label2 {
     margin: 0;
     grid-column: 3 / 4;
+    grid-row: 1 / 2;
 }
 
 .item-image {
     width: 75px;
-    grid-area: ;
+    grid-column: 1 / 2;
 }
 
 
