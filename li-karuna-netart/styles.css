@@ -1,10 +1,11 @@
 body {
     margin: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 main {
     width: 100vw;
-    height: 100vh;
 }
 
 header {
@@ -49,7 +50,23 @@ div h2 {
     text-align: center;
 }
 
+.faqs {
+    width: 90vw;
+    margin: auto;
+    height: 100px;
+    border: double black 3px;
+}
 
+section h3 {
+    background-color: rgb(144, 253, 253);
+    margin: 0;
+    text-align: center;
+}
+
+section pre {
+    margin: 0;
+    padding: 0;
+}
 
 
 footer ul {
@@ -104,9 +121,8 @@ footer ul {
 
 .container1 {
     display: grid;
-    grid-template-columns: 10vw 12vw 31vw 12vw auto;
+    grid-template-columns: 10vw 12vw 29vw 9vw auto;
     grid-template-rows: 1fr;
-    margin-bottom: 20px;
 }
 
 .label1 {
@@ -121,9 +137,30 @@ footer ul {
     grid-row: 1 / 2;
 }
 
+.label3 {
+    margin: 0;
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+.label4 {
+    margin: 0;
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+}
+
 .item-image {
     width: 75px;
     grid-column: 1 / 2;
+}
+
+.no-padding {
+    padding: 0;
+    margin: 0 0 10px 10px;
+}
+
+.image2 {
+    width: 400px;
 }
 
 
