@@ -104,7 +104,7 @@ footer ul {
 
 .container1 {
     display: grid;
-    grid-template-columns: 10vw 15vw 40vw 20vw;
+    grid-template-columns: 10vw 12vw 31vw 12vw auto;
     grid-template-rows: 1fr;
     margin-bottom: 20px;
 }
