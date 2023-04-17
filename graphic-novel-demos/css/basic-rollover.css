@@ -1,0 +1,50 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hotpink;
+}
+
+#container{
+    width: 876px;
+    height: 780px;
+    margin: 0 auto;
+    background-color: cyan;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#panel-1 {
+    width: 428px;
+    height: 380px;
+    border: 1px solid black;
+    margin: 4px;
+    background-image: url('../images/Unknown-14');
+}
+
+#panel-1:hover {
+    background-image: url('../images/face-anim.gif');
+}
+
+#panel-2 {
+    width: 428px;
+    height: 380px;
+    border: 1px solid black;
+    margin: 4px;
+    background-image: url('../images/Unknown-14');
+}
+
+#panel-3 {
+    width: 428px;
+    height: 380px;
+    border: 1px solid black;
+    margin: 4px;
+    background-image: url('../images/Unknown-14');
+}
+
+#panel-4 {
+    width: 428px;
+    height: 380px;
+    border: 1px solid black;
+    margin: 4px;
+    background-image: url('../images/Unknown-14');
+}
