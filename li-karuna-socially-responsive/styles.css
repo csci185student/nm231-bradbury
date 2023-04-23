@@ -1,0 +1,75 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+/* need to draw a background image of a starry sky */
+
+.screens {
+    width: 30vw;
+    height: 80vh;
+}
+
+.current-image {
+    border: 3px solid hotpink;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.screen2 {
+    border: 3px solid rgba(0, 255, 255);
+    opacity: 0.75;
+    z-index: 99;
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    top: 53%;
+    left: 60%;
+    transform: translate(-40%, -47%);
+}
+
+.screen3 {
+    border: 3px solid rgba(128, 0, 128);
+    opacity: 0.75;
+    z-index: 98;
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    top: 53%;
+    left: 60%;
+    transform: translate(-40%, -47%);
+}
+
+.screen4 {
+    border: 3px solid rgba(0, 128, 0);
+    opacity: 0.75;
+    z-index: 97;
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    top: 53%;
+    left: 60%;
+    transform: translate(-40%, -47%);
+}
+
+.screen5 {
+    border: 3px solid rgba(255, 255, 0);
+    opacity: 0.75;
+    z-index: 96;
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    top: 53%;
+    left: 60%;
+    transform: translate(-40%, -47%);
+}
+
+/* animate hands on the sides of the screen */
+
+
+/* animate the divs moving and merging to current-image
+upon forward/back command */
