@@ -1,3 +1,8 @@
+@font-face {
+    font-family: rainy-stars;
+    src: url('rainy_stars/RainyStars_PERSONAL_USE_ONLY.otf');
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -5,99 +10,92 @@ body {
     margin: 0 auto;
 }
 
-/* .screens {
+p {
+    color: white;
+    font-family: rainy-stars;
+    font-size: 30pt;
+    position: absolute;
+    top: 0%;
+    left: 35%;
     width: 30vw;
-    height: 80vh;
-    transition: transform 0.5s ease-in-out;
-} */
+    line-height: 75%;
+    text-align: justify;
+}
 
 .current-photo {
     border: 2px dashed purple;
     position: absolute;
     top: 10%;
     left: 35%;
-    transition: 1.5s ease-in-out;
+    opacity: 100%;
 }
 
-/* .screen2 {
-    border: 3px solid rgba(0, 255, 255);
-    opacity: 0.75;
-    z-index: 99;
+.next-photo {
+    border: 2px dashed purple;
     position: absolute;
-    width: 75%;
-    height: 75%;
-    top: 53%;
-    left: 60%;
-    transform: translate(-40%, -47%);
-}
-
-.screen3 {
-    border: 3px solid rgba(128, 0, 128);
-    opacity: 0.75;
-    z-index: 98;
-    width: 75%;
-    height: 75%;
-    position: absolute;
-    top: 53%;
-    left: 60%;
-    transform: translate(-40%, -47%);
-}
-
-.screen4 {
-    border: 3px solid rgba(0, 128, 0);
-    opacity: 0.75;
-    z-index: 97;
-    width: 75%;
-    height: 75%;
-    position: absolute;
-    top: 53%;
-    left: 60%;
-    transform: translate(-40%, -47%);
-}
-
-.screen5 {
-    border: 3px solid rgba(255, 255, 0);
-    opacity: 0.75;
-    z-index: 96;
-    width: 75%;
-    height: 75%;
-    position: absolute;
-    top: 53%;
-    left: 60%;
-    transform: translate(-40%, -47%);
-} */
-
-/* animate hands on the sides of the screen */
-
-
-/* animate the divs moving and merging to current-image
-upon forward/back command */
-
-.slide-up {
-    transform: translateY(-100%);
+    top: 50%;
+    left: 35%;
     opacity: 0%;
-  }
-
-.next-slide {
-    animation-name: next-slide;
-    animation-direction: forwards;
 }
 
-@keyframes next-slide {
+@keyframes translate {
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes opacity {
     0% {
-        display: none;
-        position: (35%, 500px);
+        opacity: 0%
     }
     100% {
-        opacity: 100%;
+        opacity: 100%
     }
 }
 
-/* .slide-down {
-    position: absolute;
-    top: 0%;
-    left: 35%;
-    transform: translateY(300px);
-    opacity: 0%;
-} */
+.slide-up {
+    animation-name: translate, opacity;
+    animation-direction: forwards, forwards;
+    animation-duration: 1.5s;
+}
+
+.next-slide {
+    animation-name: translate, opacity; 
+    animation-direction: forwards, forwards;
+    animation-duration: 1.5s;
+}
+
+.slide-down {
+    animation-name: translate, opacity;
+    animation-direction: reverse, reverse;
+    animation-duration: 1.5s;
+  }
+
+.previous-slide {
+    animation-name: translate, opacity;
+    animation-direction: reverse, reverse;
+    animation-duration: 1.5s;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   
+.rabbit-forwards {
+    animation-name: rotate;
+    animation-direction: forwards;
+    animation-duration: 1.5s;
+}
+
+.rabbit-backwards {
+    animation-name: rotate;
+    animation-direction: reverse;
+    animation-duration: 1.5s;
+}
+
+
