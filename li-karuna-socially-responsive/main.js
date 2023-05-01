@@ -1,47 +1,46 @@
-//go into the internet and draw out a dataset of random
-//videos, memes, and images
-
-//these is placeholder images, will be changed with
-//dataset
+// Define the dataset of photos
 const photos = [
-    "images/img1-600x400.jpg",
-    "images/img2-600x400.jpg",
-    "images/img3-600x400.jpg",
-    "images/img4-600x400.jpg",
-    "images/img5-600x400.jpg",
-    "images/img6-600x400.jpg",
-    "images/img7-600x400.jpg",
-    "images/img8-600x400.jpg",
-    "images/img9-600x400.jpg",
-    "images/img10-600x400.jpg"
+  "images/in-bed-1.png",
+  "images/in-bed-2.png"
 ];
-let idx = 0;
 
-//show the images from the dataset in the divs
+// Initialize the current image index to 0
+let i = 0;
+
+// Display the current image in the carousel
 function showImage() {
-    console.log('Show image');
-    const currentPhoto = document.querySelector(".current-image");
-    currentPhoto.innerHTML = `<img src="${photos[idx]}">`;
-    // const caption = document.querySelector(".caption");
-    // caption.innerHTML = `Image ${idx + 1} of ${photos.length}`;
+  console.log("Show image");
+  const currentPhoto = document.querySelector(".current-photo");
+  currentPhoto.innerHTML = `<img src="${photos[i]}">`;
 }
 
-//when i press the up arrow, or use the scroll button,
-//the carousel moves forward one image
-function forward() {
-    console.log('forward');
-    if (ev.code === 'ArrowUp') {
-    idx++;
-    }
+// Move the carousel forward one image
+function forward(ev) {
+  console.log("forward");
+  const currentPhoto = document.querySelector(".current-photo");
+  if (ev.code === "ArrowUp") {
+    i = (i + 1) % photos.length;
+    currentPhoto.classList.add("slide-up");
+    i++;
+    currentPhoto.classList.add("next-slide");
     showImage();
+  }
 }
 
-//when i press the down arrow, or use the scroll button,
-//the carousel moves backward one image
-function back() {
-    console.log('back');
-    if (ev.code === 'ArrowDown') {
-        idx--;
-    }
+// Move the carousel backward one image
+function back(ev) {
+  console.log("back");
+  const currentPhoto = document.querySelector(".current-photo");
+  if (ev.code === "ArrowDown") {
+    i = (i - 1 + photos.length) % photos.length;
+    // currentPhoto.classList.add("slide-down");
     showImage();
+  }
 }
+
+// Attach event listeners to the window object
+window.addEventListener("keydown", forward);
+window.addEventListener("keydown", back);
+
+// Display the first image in the carousel
+showImage();

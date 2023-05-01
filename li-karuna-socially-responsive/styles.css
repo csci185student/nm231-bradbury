@@ -1,26 +1,25 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-image: url('images/rabbit-feet.png'), url('images/starry-night.png');
+    margin: 0 auto;
 }
 
-/* need to draw a background image of a starry sky */
-
-.screens {
+/* .screens {
     width: 30vw;
     height: 80vh;
-}
+    transition: transform 0.5s ease-in-out;
+} */
 
-.current-image {
-    border: 3px solid hotpink;
-    z-index: 100;
+.current-photo {
+    border: 2px dashed purple;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 10%;
+    left: 35%;
+    transition: 1.5s ease-in-out;
 }
 
-.screen2 {
+/* .screen2 {
     border: 3px solid rgba(0, 255, 255);
     opacity: 0.75;
     z-index: 99;
@@ -66,10 +65,39 @@ body {
     top: 53%;
     left: 60%;
     transform: translate(-40%, -47%);
-}
+} */
 
 /* animate hands on the sides of the screen */
 
 
 /* animate the divs moving and merging to current-image
 upon forward/back command */
+
+.slide-up {
+    transform: translateY(-100%);
+    opacity: 0%;
+  }
+
+.next-slide {
+    animation-name: next-slide;
+    animation-direction: forwards;
+}
+
+@keyframes next-slide {
+    0% {
+        display: none;
+        position: (35%, 500px);
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+/* .slide-down {
+    position: absolute;
+    top: 0%;
+    left: 35%;
+    transform: translateY(300px);
+    opacity: 0%;
+} */
+  
